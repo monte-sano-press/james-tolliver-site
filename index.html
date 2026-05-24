@@ -332,15 +332,19 @@
         <div class="contact-card">
           <h3>Connect</h3>
           <p>Use the form below to get in touch.</p>
-          <form class="contact-form" action="https://formsubmit.co/22fdef41431713efeb301882456cb425" method="POST">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" placeholder="Message" required></textarea>
-            <input type="text" name="_honey" style="display:none">
-            <input type="hidden" name="_next" value="https://jamestolliver.com/">
-            <input type="hidden" name="_subject" value="New message from James Tolliver website">
-            <button type="submit" class="btn btn-primary" onclick="gtag('event','submit_contact_form');">Send Message</button>
-          </form>
+          
+          <form class="contact-form" action="https://formspree.io/f/xnjrbveq" method="POST">
+  <input type="text" name="name" placeholder="Your name" required>
+  <input type="email" name="email" placeholder="Your email" required>
+  <input type="text" name="subject" placeholder="Subject" required>
+  <textarea name="message" placeholder="Message" required></textarea>
+
+  <input type="text" name="_gotcha" style="display:none">
+  <input type="hidden" name="_subject" value="New message from James Tolliver website">
+
+  <button type="submit" class="btn btn-primary" onclick="gtag('event','submit_contact_form');">Send Message</button>
+</form>
+          
           <div class="social-links">
             <a href="https://www.instagram.com/jamestolliver/" target="_blank" rel="noopener noreferrer" class="social-btn" onclick="gtag('event','click_instagram');"><span>Instagram</span></a>
             <a href="https://www.facebook.com/jamestolliver" target="_blank" rel="noopener noreferrer" class="social-btn" onclick="gtag('event','click_facebook');"><span>Facebook</span></a>
