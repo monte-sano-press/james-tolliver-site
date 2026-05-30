@@ -189,7 +189,22 @@
     .contact-form{display:flex;flex-direction:column;gap:1rem;margin-top:1rem;}
     .contact-form input,.contact-form textarea{padding:1rem;border:1px solid #d7ccc4;border-radius:12px;font:inherit;background:#fff;color:var(--text);}
     .contact-form textarea{min-height:140px;resize:vertical;}
+    .form-note{
+      margin:.85rem 0 0;
+      color:var(--muted);
+      font-size:.9rem;
+      line-height:1.5;
+    }
 
+    .form-note a{
+      color:var(--accent);
+      font-weight:600;
+      text-decoration:none;
+    }
+
+    .form-note a:hover{
+      text-decoration:underline;
+    }
     .social-links{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.4rem;}
     .social-btn{
       display:inline-flex;
@@ -342,14 +357,17 @@
   <input type="text" name="_gotcha" style="display:none">
   <input type="hidden" name="_subject" value="New message from James Tolliver website">
 
-  <button type="submit" class="btn btn-primary" onclick="gtag('event','submit_contact_form');">Send Message</button>
+    <button type="submit" class="btn btn-primary" onclick="gtag('event','submit_contact_form');">Send Message</button>
 </form>
+
+<p class="form-note">
+  If the form does not work, please message me on Instagram at
+  <a href="https://www.instagram.com/jamestolliver/" target="_blank" rel="noopener noreferrer">@jamestolliver</a>.
+</p>
           
           <div class="social-links">
             <a href="https://www.instagram.com/jamestolliver/" target="_blank" rel="noopener noreferrer" class="social-btn" onclick="gtag('event','click_instagram');"><span>Instagram</span></a>
-            <a href="https://www.facebook.com/jamestolliver" target="_blank" rel="noopener noreferrer" class="social-btn" onclick="gtag('event','click_facebook');"><span>Facebook</span></a>
-          </div>
-        </div>
+                   </div>
       </div>
     </div>
   </section>
