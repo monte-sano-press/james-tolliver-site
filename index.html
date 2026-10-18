@@ -98,7 +98,25 @@
       background:linear-gradient(to bottom, rgba(251,250,248,0), var(--bg));
     }
 
-    .hero-inner{position:relative;z-index:1;padding:8rem 0 6rem;max-width:760px;}
+    @media (min-width: 1100px){
+  .hero-inner{
+    max-width:1160px;
+  }
+
+  .hero-copy{
+    max-width:680px;
+    margin-left:auto;
+    text-align:right;
+  }
+
+  .hero-copy h1{
+    font-size:clamp(3rem,5vw,4.5rem);
+  }
+
+  .hero-actions{
+    justify-content:flex-end;
+  }
+}
     h1,h2,h3,h4{font-family:'Playfair Display',serif;line-height:1.1;margin:0;}
     h1{font-size:clamp(3rem,6vw,5.2rem);margin-bottom:1.4rem;line-height:1.15;text-shadow:0 4px 24px rgba(0,0,0,.35);}
     .hero-copy{max-width:680px;}
